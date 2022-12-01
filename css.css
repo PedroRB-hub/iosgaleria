@@ -1,0 +1,86 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  width: 100vh;
+  background-color: aliceblue;
+}
+
+header {
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+}
+
+/* formatação do container */
+
+.container {
+  background-color: aqua;
+  height: 560px;
+  width: 1000px;
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* formatação da barra de navegação */
+.navegacao {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translate(-50%);
+  display: flex;
+}
+/* formatação dos indicadores da navegação */
+.bar {
+  background-color: #aaa;
+  width: 30px;
+  height: 10px;
+  margin: 6px;
+  transition: 0.3s;
+}
+
+.bar:hover {
+  background-color: #ffffff;
+}
+/* Ocultar as input radio */
+input {
+  display: none;
+}
+/* formatação do tamanho da classe imagens */
+.imagens {
+  display: flex;
+  height: 100%;
+  width: 600%;
+}
+.imagem {
+  width: 16.6666666667%;
+  transform: 0.9s;
+}
+/* ajuste do tamanho da imagem */
+.imagem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* transição de imagens */
+#imagem1:checked ~ .img1 {
+  margin-left: 0;
+}
+
+#imagem2:checked ~ .img1 {
+  margin-left: -16.6666666667%;
+}
+#imagem3:checked ~ .img1 {
+  margin-left: -33.3333333334%;
+}
+#imagem4:checked ~ .img1 {
+  margin-left: -50.0000000001%;
+}
+#imagem5:checked ~ .img1 {
+  margin-left: -66.6666666668%;
+}
+#imagem6:checked ~ .img1 {
+  margin-left: -83.3333333335%;
+}
